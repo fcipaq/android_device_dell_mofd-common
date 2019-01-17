@@ -36,8 +36,8 @@ function restart()
     done
 }
 
-if [ "$multisim" = "dsds" ]; then
-    restart mmgr ril-daemon ril-daemon1
-elif [ "$multisim" = "dsda" ]; then
-    restart mmgr mmgr2 ril-daemon ril-daemon1
-fi
+#if [ "$multisim" = "dsds" ]; then
+#    restart mmgr ril-daemon ril-daemon1
+#elif [ "$multisim" = "dsda" ]; then
+#    restart mmgr mmgr2 ril-daemon ril-daemon1
+#fi

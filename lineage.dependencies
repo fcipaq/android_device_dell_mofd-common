@@ -1,7 +1,7 @@
 [
   {
-    "repository": "android_kernel_asus_moorefield",
-    "target_path": "kernel/asus/moorefield"
+    "repository": "android_kernel_dell_bb",
+    "target_path": "kernel/dell/bb"
   },
   {
     "repository": "android_external_stlport",

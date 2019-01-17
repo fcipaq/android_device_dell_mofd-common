@@ -1,6 +1,7 @@
-# android_device_asus_mofd-common
+# android_device_dell_mofd-common
 
-WIP CM Asus Moorefield Common Device tree for Asus Zenfone 2 ZE551ML Z00A & ZE550ML Z008
+WIP CM Dell Venue 7000 Common Device tree for Dell Venue 7840 and Dell Venue 7040
+(adapted from Asus Zenfone 2 ZE551ML)
 
 ***MAJOR WIP***
 May destroy phones, PC's and small kittens.... you've been warned!

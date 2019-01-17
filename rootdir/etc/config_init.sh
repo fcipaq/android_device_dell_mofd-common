@@ -56,8 +56,8 @@ if [ -n "$PROJID_DETECT" ]; then
 						;;
 					"$US_BAND")
 						if [ "$COUNTRY_CODE" = "US" ]; then
-							setprop ro.asus.phone.hac 1
-							setprop ro.asus.phone.tty 1
+							setprop ro.dell.phone.hac 1
+							setprop ro.dell.phone.tty 1
 						fi
 						echo "V1_DSDA_ZE550ML_US" > /config/local_config
 						;;
@@ -80,8 +80,8 @@ if [ -n "$PROJID_DETECT" ]; then
 				case $RFSKUID_DETECT in
 					"$WW_US_BAND")
 						if [ "$COUNTRY_CODE" = "US" ]; then
-							setprop ro.asus.phone.hac 1
-							setprop ro.asus.phone.tty 1
+							setprop ro.dell.phone.hac 1
+							setprop ro.dell.phone.tty 1
 						fi
 						echo "V1_SINGLE_ZX550ML_WW" > /config/local_config
 						;;

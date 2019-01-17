@@ -5,11 +5,8 @@ import init.avc.rc
 import init.wifi.rc
 import init.platform.usb.rc
 import init.gps.rc
-import init.nfc.rc
 import init.bt.rc
-import init.modem.rc
 import init.config_init.rc
-import init.logtool.rc
 
 on early-init
 # Set boot_min_cap for boot to Android.
@@ -275,7 +272,7 @@ on property:persist.asus.coverenabled=0
     write /sys/kernel/hall_sensor_kobject/hall_sensor/activity 0
 		
 # start ril-daemon. class main in init.rc
-    setprop ro.rild.start 1
+#    setprop ro.rild.start 1
 
 service fg_conf /system/bin/fg_conf -w
     group system
@@ -289,11 +286,11 @@ on property:init.svc.pvrsrvctl=stopped
     chown system system /sys/class/devfreq/dfrgx/min_freq
     chmod 0660 /sys/class/devfreq/dfrgx/min_freq
 
-on property:service.mmgr.smp=1
-   write /proc/irq/36/smp_affinity f
+#on property:service.mmgr.smp=1
+#   write /proc/irq/36/smp_affinity f
 
-on property:service.mmgr.smp=0
-    write /proc/irq/36/smp_affinity 1
+#on property:service.mmgr.smp=0
+#    write /proc/irq/36/smp_affinity 1
 
 service audioserver /system/bin/audioserver
     class main
