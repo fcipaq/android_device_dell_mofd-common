@@ -123,14 +123,13 @@ TARGET_INIT_UMOUNT_AND_FSCK_IS_UNSAFE := true
 TARGET_IGNORE_RO_BOOT_SERIALNO := true
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/dell/moorefield
+TARGET_KERNEL_SOURCE := kernel/dell/bb
 TARGET_KERNEL_ARCH := x86_64
 BOARD_KERNEL_IMAGE_NAME := bzImage
 TARGET_KERNEL_CONFIG := bb_defconfig
 LZMA_RAMDISK_TARGETS := recovery
 
 # Kernel cmdline
-#BOARD_KERNEL_CMDLINE := init=/init pci=noearly console=logk0 loglevel=0 vmalloc=256M androidboot.hardware=mofd_v1 watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 gpt snd_pcm.maximum_substreams=8 ptrace.ptrace_can_access=1 panic=15 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0 n_gsm.mux_base_conf=\"ttyACM0,0 ttyXMM0,1\" bootboost=1'
 BOARD_KERNEL_CMDLINE := console=tty1 pci=noearly loglevel=8 vmalloc=256M androidboot.hardware=mofd_v1 intel_scu_watchdog_evo.disable_kernel_watchdog=1 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 panic=11 buildvariant=userdebug androidboot.selinux=permissive bcmdhd.custom_mac=989096fd83ee bcmdhd.custom_ccode=DE fbcon=rotate:3 fbcon=map:0 androidboot.dm_verity=disabled
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
