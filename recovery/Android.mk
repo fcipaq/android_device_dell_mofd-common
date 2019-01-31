@@ -1,5 +1,4 @@
-
-ifneq ($(filter BB EP,$(TARGET_DEVICE)),)
+ifneq ($(filter bb ep,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

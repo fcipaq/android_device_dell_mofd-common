@@ -191,7 +191,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter EP BB,\$(TARGET_DEVICE)),)
+ifneq (\$(filter EP bb,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := thermald
