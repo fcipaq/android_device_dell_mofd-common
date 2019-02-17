@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export VENDOR=dell
+export DEVICE=mofd-common
+
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
